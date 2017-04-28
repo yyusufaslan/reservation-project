@@ -1,0 +1,11 @@
+<html>
+	<body>
+		<h3>Merhaba ${customer.firstname} ${customer.name}, 
+			</h3>
+		<div>
+	   		Adres bilgileriniz <br/>
+	   		${customer.address} - ${customer.city}
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CustomBeanRegistry">
+    <option name="map">
+      <map>
+        <entry key="&lt;jaxrs:server xmlns:jaxrs=&quot;http://cxf.apache.org/jaxrs&quot; xmlns=&quot;http://www.springframework.org/schema/beans&quot; id=&quot;restContainer&quot; address=&quot;/&quot;&gt;&#10;  &lt;jaxrs:serviceBeans&gt;&#10;    &lt;ref bean=&quot;tripWebService&quot; /&gt;&#10;    &lt;ref bean=&quot;customerWebService&quot; /&gt;&#10;    &lt;ref bean=&quot;reservationWebService&quot; /&gt;&#10;  &lt;/jaxrs:serviceBeans&gt;&#10;  &lt;jaxrs:providers&gt;&#10;    &lt;ref bean=&quot;jacksonProvider&quot; /&gt;&#10;  &lt;/jaxrs:providers&gt;&#10;&lt;/jaxrs:server&gt;">
+          <value>
+            <list>
+              <CustomBeanInfo>
+                <option name="beanName" value="restContainer" />
+                <option name="beanClassName" value="org.apache.cxf.jaxrs.spring.JAXRSServerFactoryBeanDefinitionParser$SpringJAXRSServerFactoryBean" />
+                <option name="idAttribute" value="id" />
+              </CustomBeanInfo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="policies">
+      <map>
+        <entry>
+          <key>
+            <MyQName>
+              <option name="namespace" value="http://cxf.apache.org/jaxrs" />
+              <option name="localName" value="server" />
+            </MyQName>
+          </key>
+          <value>
+            <CustomBeanInfo>
+              <option name="beanClassName" value="org.apache.cxf.jaxrs.spring.JAXRSServerFactoryBeanDefinitionParser$SpringJAXRSServerFactoryBean" />
+              <option name="idAttribute" value="id" />
+            </CustomBeanInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
